@@ -1,17 +1,7 @@
-export { BaseScene } from './lib/scenes/base'
-export { Composer } from './lib/composer'
-export { Context } from './lib/context'
-export { Middleware } from './lib/types'
-export { Router } from './lib/router'
-export { session } from './lib/session'
-export { Stage } from './lib/stage'
-export { Telegraf } from './lib/telegraf'
-export { WizardScene } from './lib/scenes/wizard'
-
-const Telegraf = require('telegraf')
-const session = require('telegraf/session')
-const Stage = require('telegraf/stage')
-const Scene = require('telegraf/scenes/base')
+const Telegraf = require('lib/telegraf')
+const session = require('lib/telegraf/session')
+const Stage = require('lib/telegraf/stage')
+const Scene = require('lib/telegraf/scenes/base')
 
 // Handler factoriess
 const { enter, leave } = Stage
