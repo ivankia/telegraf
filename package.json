@@ -35,11 +35,6 @@
     "typecheck": "tsc --noEmit",
     "prepare": "tsc && mjs-entry src/index.ts >lib/index.mjs"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test && npm run lint"
-    }
-  },
   "type": "commonjs",
   "engines": {
     "node": ">=12"
